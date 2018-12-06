@@ -1,0 +1,15 @@
+1) Sort files into a "data" folder where only "GeneRNAi/TimeLapse/../.." files are located
+2) Run Fiji Startup Macro "RGBtoUINT8_v1.0.ijm" to get BW stacks of data
+3) Delete all .wmv and .avi files in the "data" folder
+4) Run createVideoNameExcel.m
+5) Open up the videoName.xls
+6) Adjust column B to be "Label" (gene_RNAi_i_001) (Control_iday_001)
+7) Adjust column C to be "Ignore" (all false)
+8) Run "randomize.m"
+9) Add to column F of rancom.xls ('annotation) where all rows are 'empty
+10) Run "saveRandomizedVideos.m"
+11) Run the "classificationGUI"
+12) Classify all 'unknowns'
+13) Remove all 'unusable1' rows from the excel
+14) Run "postProcessing.m"
+15) Run "annotateVideos.m"
